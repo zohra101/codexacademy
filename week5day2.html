@@ -1,0 +1,628 @@
+`
+<h1>Week 5 Day 2 Assignment</h1>
+<h2>Less Than</h2>
+<hr />
+
+<div>
+  <h3>Compare if a number (5) is less than another number (7)</h3>
+  <script>
+    /*
+    STEPS:
+      1. Compare is 5 less than 7?
+      2. Store the result.
+      3. Display the result.
+
+    PSEUDO CODE:
+      Is 5 < 7?
+      Write the result.    
+    */
+
+    //STEPS: 1. Compare the two values. 2. Store the result.//
+    //PSEUDO CODE: Is 5 < 7
+    result = 5 < 7;
+    
+     //STEPS: 3. Display the result.
+    //PSEUDO CODE: Display the result.
+    document.write(result + "<br>");
+  </script>
+</div>
+
+<div>
+  <h3>compare a number variable (13) is less than a number (9)</h3>
+  <script>
+    /*
+    STEPS:
+      1. Set the variable.
+      2. Compare the number wih the variable.
+      3. Store the result.
+      4. Display the result.
+
+    PSEUDO CODE:
+    set varNum
+    compare is varNum < 9?
+    display the result
+    */
+
+    //STEPS: 1. Set the variable.
+    //PSEUDO CODE: set varNum
+    varNum = 13;
+
+    //STEPS:  2. Compare two values. 3. Store the result.//
+    //PSEUDO CODE: Is varNum < 9? Store the result.*/
+    result = varNum < 9;
+
+    //STEPS: 4. Display the result.
+    //PSEUDO CODE: Display the result.
+    document.write(result + "<br>");
+  </script>
+</div>
+
+<div>
+  <h3>
+    compare a number variable (3) is less than another number variable (6)
+  </h3>
+  <script>
+    /*
+    STEPS:
+      1. Store 3 in x.
+      2. Store 6 in y.
+      3. Compare x < y.
+      4. Store the result.
+      5. Display the result.
+
+    PSEUDO CODE:
+      set x = 3
+      set y = 6
+      is 3 < 6? Store the result in comparisonResult
+      display comparisonResult  
+    */
+
+    //STEPS: 1. Store 3 in x.
+    //PSEUDO CODE: set x = 3
+    x = 3;
+
+    //STEPS: 2. Store 6 in y
+    //PSEUDO CODE: set y = 6
+    y = 6;
+
+    //STEPS: 3. Compare x < y. 4. Store the result.
+    //PSEUDO CODE: compare x < y and store result
+    comparisonResult = x < y;
+
+    //STEPS: 5. Display the result.
+    //PSEUDO CODE: display result
+    document.write(comparisonResult + "<br>");
+  </script>
+</div>
+
+<div>
+  <h3>compare if a number from the user is less than a number (9)</h3>
+  <script>
+    /*
+    STEPS:
+      1. Prompt the user.
+      2. Store the input.
+      3. Convert the input to a number.
+      4. Store the converted value.
+      5. Compare the two values.
+      6. Store the result.
+      7. Display the result.
+
+    PSEUDO CODE:
+      prompt userText "Enter a number:" and store the input 
+      convert userText to a number and store in userNumber
+      is userNumber < 9?
+      store the result
+      dispplay the result
+    */
+
+    //STEPS: 1. Prompt the user. 2. Store the input.
+    //PSEUDO:   prompt userText "Enter a number."
+    userText = prompt("Enter a number:");
+
+    //STEPS: 3. Convert the input to a number.  4. Store the converted value.
+    //PSEUDO: convert userText to a number and store in userNumber
+    userNumber = Number(userText);
+
+    //STEPS: 5. Compare the two values. 6. Store the result.
+    //PSEUDO: convert userText to a number and store in userNumber
+    result = userNumber < 9;
+
+    //STEPS: 7. Display the result.
+    //PSEUDO: display the result
+    document.write(result + "<br>");
+  </script>
+</div>
+
+<div>
+  <h3>
+    compare if a number from the user is less than another number from the user
+  </h3>
+  <script>
+    /*
+    STEPS:
+      1. Ask the user for a number.
+      2. Store the input.
+      3. Ask the user for another number.
+      4. Store the input.
+      5. Convert the string to number.
+      6. Store the converted number.
+      7. Convert the string to number.
+      8. Store the coverted number..
+      9. Compare the two values.
+      10. Store the result.
+      11. Display the result.
+
+    PSEUDO CODE:
+      prompt userText1 "Enter a number:" and store the input. 
+      prompt userText2 "Enter another number:" and store in userText2. 
+      convert userText1 to number and store in userNumber1
+      convert userText1 to number and store in userNumber1
+      compare is userNumber1 <= userNumber2 and store the result
+      display the result
+    */
+
+    //STEPS: 1. Ask the user for a number. 2. Store the input.
+    //PSEUDO: prompt userText1 "Enter a number:" and store the input.
+    userText1 = prompt("Enter a number:");
+
+    //STEPS: 3. Ask the user for another number. 4. Store the input.
+    //PSEUDO: prompt userText1 "Enter another number:" and store the input.
+    userText2 = prompt("Enter another number:");
+
+    //STEPS: 5. Convert the string to number. 6. Store the converted number.
+    //PSEUDO: convert userText1 to number and store in userNumber1
+    userNumber1 = Number(userText1);
+
+    //STEPS: 7. Convert the string to number. 8. Store the converted number.
+    //PSEUDO: convert userText1 to number and store in userNumber1
+    userNumber2 = Number(userText2);
+
+    //STEPS: 9. Compare the two values. 10. Store the result.
+    //PSEUDO: compare is userNumber1 <= userNumber2 and store the result
+    result = userNumber1 < userNumber2;
+
+    //STEPS: 11. Display the result.
+    //PSEUDO: Display the result.
+    document.write(result + "<br>");
+  </script>
+</div>
+
+<h2>Less Than or Equal To</h2>
+<hr />
+<div>
+  <h3>
+    compare a number variable is less than or equal to another number variable
+  </h3>
+  <script>
+    /*
+    STEPS:
+      1. Store 3 in x.
+      2. Store 6 in y.
+      3. Compare x < y.
+      4. Store the result.
+      5. Display the result.
+
+    PSEUDO CODE:
+      set x = 3
+      set y = 6
+      is 3 < 6? Store the result in comparisonResult
+      display comparisonResult  
+    */
+
+    //STEPS: 1. Store 3 in x.
+    //PSEUDO CODE: set x = 3
+    x = 3;
+
+    //STEPS: 2. Store 6 in y
+    //PSEUDO CODE: set y = 6
+    y = 6;
+
+    //STEPS: 3. Compare x < y. 4. Store the result.
+    //PSEUDO CODE: compare x < y and store result
+    comparisonResult = x <= y;
+
+    //STEPS: 5. Display the result.
+    //PSEUDO CODE: display result
+    document.write(comparisonResult + "<br>");
+  </script>
+</div>
+<div>
+  <h3>
+    compare a number from the user is less than or equal to another number from
+    the user
+  </h3>
+  <script>
+    /*
+    STEPS:
+      1. Ask the user for a number.
+      2. Store the input.
+      3. Ask the user for another number.
+      4. Store the input.
+      5. Convert the string to number.
+      6. Store the converted number.
+      7. Convert the string to number.
+      8. Store the coverted number..
+      9. Compare the two values.
+      10. Store the result.
+      11. Display the result.
+
+    PSEUDO CODE:
+      prompt userText1 "Enter a number:" and store the input. 
+      prompt userText2 "Enter another number:" and store in userText2. 
+      convert userText1 to number and store in userNumber1
+      convert userText1 to number and store in userNumber1
+      compare is userNumber1 <= userNumber2 and store the result
+      display the result
+    */
+
+    //STEPS: 1. Ask the user for a number. 2. Store the input.
+    //PSEUDO: prompt userText1 "Enter a number:" and store the input.
+    userText1 = prompt("Enter a number:");
+
+    //STEPS: 3. Ask the user for another number. 4. Store the input.
+    //PSEUDO: prompt userText1 "Enter another number:" and store the input.
+    userText2 = prompt("Enter another number:");
+
+    //STEPS: 5. Convert the string to number. 6. Store the converted number.
+    //PSEUDO: convert userText1 to number and store in userNumber1
+    userNumber1 = Number(userText1);
+
+    //STEPS: 7. Convert the string to number. 8. Store the converted number.
+    //PSEUDO: convert userText1 to number and store in userNumber1
+    userNumber2 = Number(userText2);
+
+    //STEPS: 9. Compare the two values. 10. Store the result.
+    //PSEUDO: compare is userNumber1 <= userNumber2 and store the result
+    result = userNumber1 <= userNumber2;
+
+    //STEPS: 11. Display the result.
+    //PSEUDO: Display the result.
+    document.write(result + "<br>");
+  </script>
+</div>
+
+<div>
+  <h3>ompare that 2 numbers from the user are not equal</h3>
+  <script>
+    /*
+    STEPS:
+      1. Ask the user for a number.
+      2. Store the input.
+      3. Ask the user for another number.
+      4. Store the input.
+      5. Convert the string to number.
+      6. Store the converted number.
+      7. Convert the string to number.
+      8. Store the coverted number..
+      9. Compare the two values.
+      10. Store the result.
+      11. Display the result.
+
+    PSEUDO CODE:
+      prompt userText1 "Enter a number:" and store the input. 
+      prompt userText2 "Enter another number:" and store in userText2. 
+      convert userText1 to number and store in userNumber1
+      convert userText1 to number and store in userNumber1
+      compare is userNumber1 <= userNumber2 and store the result
+      display the result
+    */
+
+    //STEPS: 1. Ask the user for a number. 2. Store the input.
+    //PSEUDO: prompt userText1 "Enter a number:" and store the input.
+    userText1 = prompt("Enter a number:");
+
+    //STEPS: 3. Ask the user for another number. 4. Store the input.
+    //PSEUDO: prompt userText1 "Enter another number:" and store the input.
+    userText2 = prompt("Enter another number:");
+
+    //STEPS: 5. Convert the string to number. 6. Store the converted number.
+    //PSEUDO: convert userText1 to number and store in userNumber1
+    userNumber1 = Number(userText1);
+
+    //STEPS: 7. Convert the string to number. 8. Store the converted number.
+    //PSEUDO: convert userText1 to number and store in userNumber1
+    userNumber2 = Number(userText2);
+
+    //STEPS: 9. Compare the two values. 10. Store the result.
+    //PSEUDO: compare is userNumber1 <= userNumber2 and store the result
+    result = userNumber1 !== userNumber2;
+
+    //STEPS: 11. Display the result.
+    //PSEUDO: Display the result.
+    document.write(result + "<br>");
+  </script>
+</div>
+
+<h2>
+  compare a number is less than another number, then display different messages
+</h2>
+<hr />
+<div>
+  <h3>first number should be smaller than the second number</h3>
+  <script>
+    /*
+    Is 9 less than 13?
+    If yes...
+    Otherwise...
+
+    STEPS:
+      1. Compare if 9 is less than 13.
+      2. Store the result.
+      3. If yes, 
+      4.   then display "10 is less than 13."
+      5. Otherwise 
+      6.   display "10 is not less than 13."
+
+    PSEUDO CODE:
+      compare is 9 < 13 and store the result in isLess
+      If isLess === "true"
+        then write "9 is less than 13."
+      Else 
+        write "9 is not less than 13." 
+  */
+
+    //STEPS: 1. Compare 9 < 13. 2. Store the result.
+    //PSEUDO CODE: compare 9 < 13 and store result in isLess
+    isLess = 9 < 13;
+
+    //STEPS:  3. If yes, 4.   then display "9 is less than 13." 5. Otherwise 6.   display "9 is not less than 13."
+    //PSEUDO: If isLess = "true" then write "9 is less than 13. Else write "9 is not less than 13."
+
+    if (isLess) {
+      document.write("9 is less than 13.");
+    } else {
+      document.write("9 is not less than 13.");
+    }
+  </script>
+</div>
+
+<div>
+  <h3>first number should be larger than the second number</h3>
+  <script>
+    /*
+    Is 10 less than 7?
+    If yes...
+    Otherwise...
+
+    STEPS:
+      1. Compare if 10 is less than 7.
+      2. Store the result.
+      3. If yes, 
+      4.   then display "10 is less than 7."
+      5. Otherwise 
+      6.   display "10 is not less than 7"
+
+    PSEUDO CODE:
+      compare is 10 < 7 and store the result in isLess
+      If isLess = "true"
+        then write "10 is less than 7."
+      Else 
+        write "10 is not less than 7." 
+  */
+    //STEPS: 1. Compare 10 < 7. 2. Store the result.
+    //PSEUDO CODE: compare 10 < 7 and store result in isLess
+    isLess = 10 < 7;
+
+    //STEPS:  3. If yes, 4.   then display "10 is less than 7." 5. Otherwise 6.   display "10 is not less than 7."
+    //PSEUDO: If isLess = "true" then write "10 is less than 7. Else write "10 is not less than 7."
+
+    if (isLess) {
+      document.write("10 is less than 7.");
+    } else {
+      document.write("10 is not less than 7.");
+    }
+  </script>
+</div>
+
+<div>
+  <h3>
+    compare if 2 number variables are equal, then display different messages
+  </h3>
+  <script>
+    /*
+    STEPS:
+      1. Store 3 in firstNum.
+      2. Store 6 in secondNum.
+      3. Compare firstNum eq= secondNum.
+      4. Store the result in doesMatch.
+      5, If doesMatch is true
+      6.   then display "firstNum is equal to secondMum."
+      7. Otherwise 
+      8.   display "firstNum is not equal to secondMum."
+
+
+    PSEUDO CODE:
+      set firstNum = 3
+      set secondNum= 6
+      does firstNum = secondNum? Store the result in doesMatch
+            If doesMatch = "true"
+        then write "firstNum is equal to secondNum."
+      Else 
+        write "firstNum is not equal to secondNum." 
+    */
+
+    //STEPS: 1. Store 3 in firstNum.
+    //PSEUDO CODE: set firstNum = 3
+    firstNum = 3;
+
+    //STEPS: 2. Store 6 in secondNum
+    //PSEUDO CODE: set secondNum = 6
+    secondNum = 6;
+
+    //STEPS: 3. Compare firstNum < secondNum. 4. Store the result.
+    //PSEUDO CODE: doesMaatxh = compare firstNum === secondNum and store result
+    doesMatch = firstNum === secondNum;
+
+    //STEPS:  5. If yes, 6.   then display "firstNum is equal to secondNum." 7. Otherwise 8.   display "firstNum is not equal to secondNum."
+    //PSEUDO: If doesMatch = "true" then write "firstNum is not equal to secondNum." Else write "firstNum is not equal to secondNum."
+
+    if (doesMatch) {
+      document.write(
+        "The first number " +
+          firstNum +
+          "is equal to the second number " +
+          secondNum +
+          "."
+      );
+    } else {
+      document.write(
+        "The first number " +
+          firstNum +
+          "is not equal to the second number " +
+          secondNum +
+          "."
+      );
+    }
+  </script>
+</div>
+
+<div>
+  <h3>
+    compare if a user number is equal to a number variable, then display
+    different messages
+  </h3>
+  <script>
+    /*
+    STEPS:
+      1. Ask the user for a number.
+      2. Store the input. 
+      3. Convert the string to number.
+      4. Store the converted number.
+      5. Set a value for the second number.
+      6. Compare if the user input equals the set number.
+      7. Store the result.
+      8. If the comparison is true,
+      9.    then display "Your number is equal to my number."
+      10. Otherwise 
+      11.   display "Your number is not equal my number."
+
+    PSEUDO CODE:
+     prompt for userText
+     userNuum = convert userNum from string to Number
+     secondNum = 8
+     compare userNum eq= secondNum
+     store the result in doesMatch
+     if doesMatch = "true"
+        then write "usertNum is equal to myNum."
+      else 
+        write "userNum is not equal to myNum." 
+    */
+
+    //STEPS: 1. Ask the user for a number. 2. Store the input..
+    //PSEUDO CODE:  prompt for userText
+    userText = prompt("Enter a nunber:");
+
+    //STEPS:  3. Convert the string to number. 4. Store the converted number.
+    //PSEUDO CODE:  prompt for userText
+    userNum = Number(userText);
+
+    //STEPS: 5. Set a value for the second number.
+    //PSEUDO CODE: set myNum = 6
+    myNum = 6;
+
+    //STEPS: 6. Compare if the user input equals the set number. 7. Store the result.
+    //PSEUDO CODE: doesMaatxh = compare userNum eq+ myNum and store result
+    doesMatch = userNum === myNum;
+
+    //STEPS: 8. If the comparison is true, 9.    then display "Your number is equal to my number."   10. Otherwise 11.   display "Your number is not equal my number."
+    //PSEUDO: if doesMatch = "true" then write "Your number is equal to my number." else write "Your number is not equal to my number."
+    if (doesMatch) {
+      document.write("Your number is equal to my number.");
+    } else {
+      document.write("Your number is not equal to my number.");
+    }
+  </script>
+</div>
+
+<div>
+  <h3>
+    compare if a user number is equal to a number variable, then display
+    different messages depending on the result, and tell the use if their number
+    was higher or lower
+  </h3>
+  <script>
+    /*
+  
+  STEPS:
+      1. Ask the user for a number.
+      2. Store the input. 
+      3. Convert the string to number.
+      4. Store the converted number.
+      5. Set a value for the second number.
+      6. Compare if the user input equals the set number.
+      7. Store the result.
+      8. If the comparison is true,
+      9     then display "You guessed my numbwr!"
+      10. Otherwise 
+      11.   display "You didn't guess my number."
+      12. Compare if userNun < myNum
+      13. If userNum < myNum 
+      14.    then display "Your number is less than my number."
+      15. Othwewise 
+      16.   display "Your number is greater than my number."
+      
+
+  PSEUDO CODE:
+      prompt userText1 "Enter a number:" and store input in Usertext1
+      convert userText1 to number and store in userNumber
+      compare does userNumber1 eq= userNumber2 and store the result in doesMatch
+      if doesMatch is true, write "You guessed my numbwr!"
+        else write "You didn't guess my number."
+        compare if userNun < myNum
+          if userNum < myNum 
+            then display "Your number is less than my number."
+          othwewise display "Your number is greater than my number." 
+  */
+
+    //STEPS: 1. Ask the user for a number. 2. Store the input.
+    //PSEUDO:  prompt userText1 "Enter a number:" and store input in Usertext1
+    userText = prompt("Enter a number:");
+
+    //STEPS:  3. Convert the string to number. 4. Store the converted number.
+    //PSEUDO: convert userText1 to number and store in userNumber1
+    userNum = Number(userText);
+
+    //STEPS: 5. Set a value for the second number.
+    //PSEUDO CODE: set myNum =9
+    myNum = 9;
+
+    //STEPS: 6. Compare if the user input equals the set number. 7. Store the result.
+    //PSEUDO CODE: compare does userNumber1 eq= userNumber2 and store the result in doesMatch
+    doesMatch = userNum === myNum;
+
+    //STEPS:  8. If the comparison is true,
+    //PSEUDO: if doesMatch = "true"
+    if (doesMatch) {
+      //STEPS: 9. then display "You guessed my numbwr!"
+      //PSEUDO: then write "You guessed my numbwr!"
+      document.write("You guessed my number!");
+
+      //STEPS: 10. Otherwise
+      //PSEUDO:  else
+    } else {
+      //STEPS: 11.   display "You didn't guess my number."
+      //PSEUDO: write display "You didn't guess my number."
+      document.write("You didn't guess my number."+ "<br>");
+    }
+
+    //STEPS: 12. Compare if userNun < myNum
+    //PSEUDO: compare if userNun < myNum
+    isLess = userNum < myNum;
+
+    //STEPS: 13.   If userNum < myNum
+    //PSEUDO: if userNum < myNum
+    if (isLess) {
+      //STEPS: 14. then display "Your number is less than my number."
+      //PSEUDO: then write "Your number is less than my number."
+      document.write("Your number is less than my number.");
+
+      //STEPS: 15. Otherwise
+      //PSEUDO:  else
+    } else {
+      //STEPS: 16.   Othwewise display "Your number is greater than my number."
+      //PSEUDO: else write "Your number is greater than my number."
+      document.write("Your number is greater than my nunber.");
+    }
+  </script>
+</div>

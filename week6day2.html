@@ -1,0 +1,401 @@
+<h1>Week 6 Day 2 Assignment</h1>
+<head>
+    <h2>Functions</h2>
+<h3>use pseudo code and JavaScript to create a function that displays "Hello world!"
+</h3>
+<div>
+  <script>
+    /************************
+  Create a fuction called display that displays "Hello world!
+  
+  STEPS:
+    1. Create a command called display.
+    2. Let it display "Hello world!"
+    
+  PSEUDO CODE:
+    create function called display
+      display "Hello world!"
+  *************************/
+
+    //STEPS: 1. Create a command called display. 2. Let it display "Hello world!"
+    //PSEUDO: Set the display variable to display "Hello world!"
+    function display() {
+      
+        //display "Hello world!"
+        document.write("Hello world!");
+    }
+    
+    display();
+
+  </script>
+</div>
+
+<h3>
+  use pseudo code and JavaScript to create a function that accepts a message and displays it
+</h3>
+<div>
+  <script>
+    /************************
+  STEPS:
+    1. Create a command called display.
+    2. Let it accept a message.
+    3. Let it display the message.
+    
+  PSEUDO CODE:
+    create fuction called display
+      saccept a message
+      display the messagew
+  *************************/
+
+    //STEPS: 1. Create a command called display.
+    //PSEUDO: create fuction called display
+    function display(myMessage) {
+      //STEPS: 2. Let it accept a message. 3.Let it display the message.
+      //PSEUDO: accept a message  and display the messagew
+      display = document.write(myMessage);
+    }
+
+    display("Here is my message!");
+  </script>
+</div>
+
+<h3>
+  usse pseudo code and JavaScript to create a command that prompts for a name, and then returns it
+</h3>
+<div>
+  <script>
+    /************************
+     STEPS:
+    1. Create a function called askForUserName.
+    2. Prmpt the user with "Enter your User Name:".
+    3. Store the response in userName.
+    4. Send userName.
+    
+    PSEUDO CODE:
+    create fuction askForUserName
+      userName = prompt("Enter your User Name:")
+      send userName
+  *************************/
+
+    //STEPS: 1. Create a function called askForUserName.
+    //PSEUDO: create fuction called display and accept a message
+    function askForUserName() {
+       
+        //STEPS: 2. Prmpt the user with "Enter your User Name:".3. Store the response in userName.
+        //PSEUDO: userName = prompt("Enter a name:")
+        userName = prompt("Enter your User Name:");
+
+        //STEPS: 4. Send userName.
+        //PSEUDO: return userName
+        return userName;
+    }
+   
+    myName = askForUserName();
+    document.write(myName);
+
+  </script>
+</div>
+
+<h3>
+  use pseudo code and JavaScript to create a function that prompts for a number
+  then returns it as a number
+</h3>
+<div>
+  <script>
+    /************************
+    STEPS:
+        1. Create a function called askForNumber.
+        2. Prmpt the user with "Enter a number:".
+        3. Store the response in userText.
+        4. Convert the userText value to a number.
+        5. Store in userNumber.
+        6. Send userNumber.
+                                                                                                                                                                                                                    
+    PSEUDO CODE:
+    create fuction getNumber
+        userText | prompt("Enter a number:")
+        userNumber | Number(userText)
+        send userNumber
+    *************************/
+
+    //STEPS: 1. Create a command called ask.
+    //PSEUDO: create fuction called display and accept a message
+    function askForNumber() {
+
+        //STEPS: 2. Prmpt the user with "Enter a number:".3. Store the response in userText.
+        //PSEUDO: userName = prompt("Enter a number:")
+        userText1 = prompt("Enter a number:");
+
+        //STEPS: 4. Convert the userText value to a number. 5. Store in userNumber.
+        //PSEUDO: userNumber | Number(userText)
+        userNumber1 = Number(userText1);
+
+        //STEPS: 9. Send userNumber.
+        //PSEUDO: send userNumber
+        return userNumber1;
+   }
+    
+    myNumber = askForNumber();
+    document.write(myNumber);
+
+  </script>
+</div>
+
+<h3> use pseudo code and JavaScript to create a function that accepts a message, prompts with the message, returns the actual number if the user input was a number, otherwise returns the original user input</h3>
+<div>
+  <script>
+    /************************
+    STEPS:
+        1. Create a function called askForValidatedNumber.
+        2. Prmpt the user with "Enter a number:".
+        3. Store the response in userText.
+        4. Convert the userText value to a number.
+        5. Store in userNumber.
+        6. Compare is userNunber not a number.
+        7. Store in isNotNumber.
+        8. If yes, send userText.
+        9.  Otherwise send UserNumber.
+                                                                                                                                                                                                                    
+    PSEUDO CODE:
+    create fuction getNumber
+      userText | prompt("Enter a number:")
+      userNumber | Number(userText)
+      isNotNumber | userNumber eq= NanN
+      if true send userText
+      else send userNumber
+    *************************/
+
+    //STEPS: 1. Create a command called ask.
+    //PSEUDO: create fuction called display and accept a message
+    function askForValidatedNumber() {
+        //STEPS: 2. Prmpt the user with "Enter a number:".3. Store the response in userText.
+        //PSEUDO: userName = prompt("Enter a number:")
+        userText2 = prompt("Enter a message:");
+
+        //STEPS: 4. Convert the userText value to a number.5. Store in userNumber.
+        //PSEUDO: userNumber | Number(userText)
+        userNumber2 = Number(userText2);
+
+        //STEPS: 6. Compare is userNunber not a number. 7. Store in isNotNumber.
+        //PSEUDO: userNumber | Number(userText)
+        isNotNumber2 = isNaN(userNumber2);
+
+        //STEPS: 8. If yes, send userText.
+        //PSEUDO: if true send userText
+        if (isNotNumber2) {
+            return userText2;
+
+        //STEPS: 9. Otherwise send UserNumber.
+        //PSEUDO: else send userNumber
+        } else {
+
+            return userNumber2;
+        }
+    }     
+    
+    myValidatedNumber = askForValidatedNumber();
+    document.write(myValidatedNumber);
+
+  </script>
+</div>
+</head>
+
+<body>
+    <hr />
+<h2>Loops</h2>
+<h3>use pseudo code and JavaScript to create a loop that keeps going until the user inputs a specific word</h3>
+<div>
+    <script>
+        /*************************
+    Create a loop that repeats until the user enters "stop".
+    
+    STEPS:
+        1. Start a loop.
+        2. Prompt the user to enter the stop word.
+        3. Store the input in userText.
+        4. Compare does userText match "stop".
+        5. Store the comparison in isSTop. 
+        6. While not isStop, repeat the loop.
+    
+    PSEUDO:
+        start a loop
+           userText | prompt for "stop"
+           compare userText eq = "stop"
+        while userText <> "stop", repeat
+    **************************/
+    
+    //STEPS: 1. Start a loop.
+    //PSEUDO: start a loop]
+    do {
+    
+    //STEPS: 2. Prompt the user to enter the stop word. 3. Store the input in userText.
+    //PSEUDO: userText | prompt for "stop"
+    userText3 = prompt("Enter 'stop' to end the loop:");
+    
+    //STEPS: 4. Compare does userText match "stop". 5. Store the comparison in isSTop. 
+    //PSEUDO: compare userText eq = "stop"
+    document.write("You entered " + ' ' + userText3 + '.' + '<br>');
+    isStop = userText3 === "stop";
+    }
+
+    //STEPS: 4. Compare does userText match "stop". 5. Store the comparison in isSTop. 
+    //PSEUDO: while userText <> "stop", repeat 
+    while (!isStop);
+    
+    </script>
+</div>
+
+<h3> use pseudo code and JavaScript to create a loop that repeats 6 times</h3>
+  <div>
+  <script>
+    /*************************
+    Create a loop that repeats 6 times.
+
+    STEPS:
+        1. Store 0 in myCount .
+        2. Start a loop.
+        3. Increment myCount.
+        4. Display myCount.
+        5. Set the ending condition.
+        6. While myCount is not 3, repeat the action.
+
+    PSEUDO:
+        myCount = 0
+        start a loop
+            increment myCount
+            display myCount
+            set ending condition
+        while myCount is not 6, repeat
+    **************************/
+
+//STEPS: 1. Store 0 in myCount.
+//PSEUDO: myCount = 0
+myCount = 0; 
+
+//STEPS: 2. Start a loop.
+//PSEUDO: start a loop
+do {
+
+    //STEPS: 3. Increment myCount.
+    //PSEUDO: increment myCount
+    myCount++;
+
+    //STEPS: 4. Display myCount.
+    //PSEUDO: display myCount
+    document.write(myCount + " ");
+
+    //STEPS: 5. Set the ending condition.
+    //PSEUDO:set ending condition
+   isDone = myCount === 6;
+}
+
+//STEPS: 6. While myCount is not 3, repeat the action.
+//PSEUDO: while myCount is not 3, repeat
+while (!isDone)
+
+  </script>
+</div>
+
+<h3> use pseudo code and JavaScript to create a loop that repeats a specified number of times and runs a function you created that prompts</h3>
+<div>
+    <script>
+ /************************THIS PART IS NOT FINISHED. I CANNOT GET MY TEXT VALIDATION TO WORK WITHIN THE ASSIGNMENT REQUIREMENTS.
+  *
+     STEPS:
+    1. Create a function called askForColor.
+    2. Prmpt the user with "Enter a color:".
+    3. Store the response in userText.
+    4. Create a function called isTextOnly. 
+    5. Compare if userText is a nunber.
+    6.      If yes, display an error message
+    9.         and run the askForValidColor function
+    10.          while the input has numbers in it
+            else send userColor
+            and display userColor
+            and increment colorCount
+    11. Repeat function askForColor 3 times.
+    12. Display all 3 answers entered. 
+    
+    PSEUDO CODE:
+    create fuction askForColor
+      userName = prompt("Enter a color:")
+      store userColor
+
+    create function isTextOnly
+        isTextOnly = isNaN(userText)
+        if false, display "[userText] is a number. Please enter a valid color."
+            and call askForColor again
+        else display "User Color [count]: userColor."
+
+    do askForColor while count === 3 
+    and display User Color 1, User Color 2, and User Color 3. 
+
+  *************************/
+
+    //STEPS: 1. Create a function called askForFavoriteColor.
+    //PSEUDO: create fuction called display and accept a message
+
+    function askForColor() {
+        //STEPS:
+        //PSEUDO:
+        userText = prompt("Enter a  color:");
+    }
+
+   //STEPS: 1. Create a function called askForFavoriteColor.
+//PSEUDO: create fuction called display and accept a message]
+    function isTextOnly() {
+        //STEPS: 
+        //PSEUDO: 
+        isTextOnly = isNaN(userText);
+        if (isTextOnly) {
+            return userColor = userText;
+        }
+    }
+   
+       //STEPS: 1. Create a function called askForFavoriteColor.
+    //PSEUDO: create fuction called display and accept a message
+    function askForValidColor() {
+        //STEPS: 
+        //PSEUDO: 
+         userText = prompt("The value entered was a number. Please enter a valid color:");
+    }
+
+    //STEPS: Store 1 in myCount.
+    //PSEUDO: myCount = 1
+    colorCount = 1; 
+
+    //STEPS: Start a loop.
+    //PSEUDO: start a loop
+    do {
+
+    //STEPS: Ask the user for a color.
+    //PSEUDO: start a loop
+    askForColor();
+
+    //STEPS: Validate that the input is text only.
+    //PSEUDO: 
+    if (isTextOnly) { 
+    
+    //STEPS: If the input is text, display the color and the User Color count. 
+    //PSEUDO: 
+        document.write('User Color ' + colorCount + ': ' + userColor + '<br>');
+    colorCount++;
+    }
+
+    //STEPS: If the input is a number, display the validatio message and prompt the user again. 
+    //PSEUDO: 
+    else {askForValidColor();
+    } 
+
+    //STEPS: When the user has successfully entered 3 colors
+    //PSEUDO: when colorCount = 3
+    isDone = colorCount > 3;
+     }
+
+    //STEPS: end the loop.
+    //PSEUDO: stop the loop
+while (!isDone)
+
+    </script>
+   
+</div>

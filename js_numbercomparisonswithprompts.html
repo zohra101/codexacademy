@@ -1,0 +1,104 @@
+<h1 style="font-family: sans-serif">Number Comparisons with Prompts</h1>
+<script>
+  document.write("Prompt the User for a Number and Compare: ");
+
+  /*STEPS:
+      1. Prompt the user.
+      2. Store the input.
+      3. Convert the input to a number.
+      4. Store the converted value.
+      5. Compare the two values.
+      6. Store the result.
+      7. Display the result.
+
+  PSEUDO CODE:
+      Prompt userText "Enter a number." Store the input. Convert userText to number. Store in userNumber.
+      Is userNumber < 9?*/
+
+  //STEPS: 1. Prompt the user. 2. Store the input. 3. Convert the input to a number.
+  //PSEUDO: Display the result.
+
+  userText = prompt("Enter a number:");
+
+  userNumber = Number(userText);
+
+  result = userNumber < 9;
+
+  //STEPS: 4. Display the result.
+  //PSEUDO: Display the result.
+  document.write(result + "<br>");
+
+  document.write("Prompt the User for Two Numbers and Compare: ");
+
+  /*
+  
+  STEPS:
+      1. Ask the user for a number.
+      2. Store the input.
+      3. Convert the string to number.
+      4. Store the converted number.
+      5. Ask the user for a number.
+      6. Store the input.
+      7. Convert the string to number.
+      8. Store the coverted number..
+      9. Compare the two values.
+      10. Store the result.
+      11. Display the result.
+
+  PSEUDO CODE:
+      Prompt userText1 "Enter a number." Store the input. Convert userText1 to number. Store in userNumber1.
+      Prompt userText2 "Enter another number." tore in userText2. Convert  userText2 to number. Store in userNumber2.
+      Is userNumber1 <= userNumber2 Store the result. Display the result. 
+      
+  */
+
+  //STEPS: 1. Prompt the user. 2. Store the inputs. 3. Convert the inputs to numbers. 4. Compare.
+  //PSEUDO: Display the result.
+  userText1 = prompt("Enter a number:");
+  userText2 = prompt("Enter another number:");
+  userNumber1 = Number(userText1);
+  userNumber2 = Number(userText2);
+
+  result = userNumber1 < userNumber2;
+
+  //STEPS: 4. Display the result.
+  //PSEUDO: Display the result.
+  document.write(result + "<br>");
+  
+   document.write("Prompt the User for Two Numbers and Compare/Not Equal: ");
+
+  /*
+  
+  STEPS:
+      1. Ask the user for a number.
+      2. Store the input.
+      3. Convert the string to number.
+      4. Store the converted number.
+      5. Ask the user for a number.
+      6. Store the input.
+      7. Convert the string to number.
+      8. Store the coverted number..
+      9. Compare the two values.
+      10. Store the result.
+      11. Display the result.
+
+  PSEUDO CODE:
+      Prompt userText1 "Enter a number." Store the input. Convert userText1 to number. Store in userNumber1.
+      Prompt userText2 "Enter another number." Store in userText2. Convert userText2 to number. Store in userNumber2.
+      Is userNumber1 <> userNumber2. Store the result. Display the result. 
+      
+  */
+
+  //STEPS: 1. Prompt the user. 2. Store the inputs. 3. Convert the inputs to numbers. 4. Compare.
+  //PSEUDO: Display the result.
+  userText1 = prompt("Enter a number:");
+  userText2 = prompt("Enter another number:");
+  userNumber1 = Number(userText1);
+  userNumber2 = Number(userText2);
+
+  result = userNumber1 !== userNumber2;
+
+  //STEPS: 4. Display the result.
+  //PSEUDO: Display the result.
+  document.write(result + "<br>");
+</script>
